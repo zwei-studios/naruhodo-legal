@@ -14,176 +14,223 @@
         th { background-color: #f5f5f5; }
         code { background-color: #f5f5f5; padding: 2px 6px; border-radius: 3px; }
         hr { margin: 2em 0; border: none; border-top: 1px solid #ddd; }
+        a { color: #8B5CF6; }
     </style>
 </head>
 <body>
 
 <h1>Privacy Policy for Naruhodo</h1>
-<p><strong>Last Updated:</strong> March 2026</p>
+<p><strong>Last Updated:</strong> September 2026</p>
 
 <h2>1. Introduction</h2>
-<p>Naruhodo ("App", "we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and handle your information when you use our mobile application available on iOS.</p>
-<p>Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our App.</p>
+<p>Naruhodo ("App", "we", "us", or "our") is a Japanese-learning iOS application. This Privacy Policy explains what information we collect, how it is used, and which third parties receive it when you use the App or the website at <a href="https://naru-app.com">naru-app.com</a>.</p>
+<p>If you do not agree with these practices, please do not use the App or the website.</p>
 
-<h2>2. Information We Collect</h2>
-
-<h3>2.1 Learning Preferences</h3>
+<h2>2. Information Stored on Your Device</h2>
+<p>Learning data is stored locally on your device (and, if you enable it, in your personal iCloud account). We do not operate a user-account system.</p>
 <ul>
-    <li><strong>What:</strong> Your selected difficulty level, enabled shows, and disabled episodes</li>
-    <li><strong>Storage:</strong> Stored locally on your device only</li>
-    <li><strong>Purpose:</strong> To personalize your learning feed</li>
+    <li><strong>Learning preferences:</strong> difficulty range, enabled shows, disabled episodes, onboarding answers</li>
+    <li><strong>Saved vocabulary, grammar, and favorites</strong></li>
+    <li><strong>Progress:</strong> seen clips, review/SRS state, streaks, unlock progress</li>
+    <li><strong>Optional iCloud backup:</strong> a snapshot of vocabulary, favorites, selected settings, and seen-clip counts, stored in your iCloud account via Apple. We cannot read this backup from our servers.</li>
 </ul>
 
-<h3>2.2 Saved Vocabulary</h3>
-<ul>
-    <li><strong>What:</strong> Japanese words you choose to save for review</li>
-    <li><strong>Storage:</strong> Stored locally on your device only</li>
-    <li><strong>Purpose:</strong> To build your personal vocabulary list</li>
-</ul>
+<h2>3. Information We Send Off-Device</h2>
 
-<h3>2.3 Favorites</h3>
+<h3>3.1 Product analytics (PostHog)</h3>
+<p>The App uses PostHog (EU cloud, <code>eu.i.posthog.com</code>) to understand how the App is used and to improve it. We send:</p>
 <ul>
-    <li><strong>What:</strong> Clips you mark as favorites</li>
-    <li><strong>Storage:</strong> Stored locally on your device only</li>
-    <li><strong>Purpose:</strong> To let you revisit clips you enjoyed</li>
+    <li>App lifecycle and screen views</li>
+    <li>Product events (for example clip views, vocabulary saves, reviews, paywall and onboarding steps, downloads, backups)</li>
+    <li>An anonymous RevenueCat app user ID so analytics can be joined with subscription status</li>
+    <li>If you submit in-app feedback: the message text and, if you provide it, a contact email. Email is optional and only used to reply.</li>
 </ul>
+<p>PostHog may also receive standard device and request metadata (such as IP address, device type, OS version, and language) as part of operating the SDK. See <a href="https://posthog.com/privacy">PostHog's Privacy Policy</a>.</p>
 
-<h3>2.4 Network Requests</h3>
+<h3>3.2 Subscriptions (RevenueCat and Apple)</h3>
+<p>Purchases and subscriptions are processed by Apple. We use RevenueCat to manage entitlements and subscription status. RevenueCat receives purchase receipts, product identifiers, subscription status, and an anonymous app user ID. The App sends its AppsFlyer ID to RevenueCat; RevenueCat then sends configured subscription-lifecycle events and associated purchase data to AppsFlyer server-to-server. RevenueCat's automatic collection of advertising and vendor identifiers is disabled. If you arrived via Apple Ads, we send Apple's AdServices attribution token to RevenueCat so we can see which campaigns led to trials and paid subscriptions. This does not use the advertising identifier (IDFA) and does not show an App Tracking Transparency prompt. See <a href="https://www.revenuecat.com/privacy">RevenueCat's Privacy Policy</a> and <a href="https://www.apple.com/privacy">Apple's Privacy Policy</a>.</p>
+
+<h3>3.3 Advertising measurement (AppsFlyer, Meta, and TikTok)</h3>
+<p>The App includes the AppsFlyer Strict SDK — not the Meta or TikTok SDKs — so we can measure whether ads led to installs, app sessions, trial starts, and purchases, and improve our campaigns. AppsFlyer may receive:</p>
 <ul>
-    <li><strong>What:</strong> The App downloads video clips and content data from our content delivery servers</li>
-    <li><strong>Data Sent:</strong> Standard HTTP request data (IP address, device type). No personal data or user identifiers are sent.</li>
-    <li><strong>Purpose:</strong> To stream learning content to the App</li>
+    <li>App install, launch, and session events, together with app and device metadata</li>
+    <li>An AppsFlyer-generated device identifier, Identifier for Vendor (IDFV), IP address, user agent, OS and app version, and App Tracking Transparency status</li>
+    <li>Subscription-lifecycle and purchase events sent server-to-server by RevenueCat, including the anonymous app user ID, product identifier, amount, and currency where applicable</li>
 </ul>
+<p>Through the partner integrations we configure in AppsFlyer, AppsFlyer sends selected install, session, trial, and purchase postbacks and permitted event data to Meta and TikTok for advertising measurement and optimization. This can include postbacks for events that AppsFlyer did not attribute to that partner. We do not collect or share the advertising identifier (IDFA), do not include the Meta or TikTok SDKs in the App, and do not currently show an App Tracking Transparency prompt. Apple may also provide aggregated SKAdNetwork measurement that does not identify you through IDFA. See <a href="https://www.appsflyer.com/legal/privacy-policy/">AppsFlyer's Privacy Policy</a>, <a href="https://www.facebook.com/privacy/policy/">Meta's Privacy Policy</a>, and <a href="https://www.tiktok.com/legal/privacy-policy">TikTok's Privacy Policy</a>.</p>
 
-<h2>3. Information We Do NOT Collect</h2>
+<h3>3.4 Content delivery (Cloudflare)</h3>
+<p>Video clips and content files are downloaded from our content servers on Cloudflare. Those requests include standard HTTP data (IP address, device type, user agent). See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>.</p>
+
+<h3>3.5 Website (naru-app.com)</h3>
+<p>The marketing site is a Cloudflare Worker. Cloudflare sees standard request data (including IP address) to deliver the site. For tracked links (for example <code>/r/&lt;code&gt;</code>), we store only the campaign code, event kind, country code (<code>cf-ipcountry</code>), and user agent — not the IP address. The website does not currently load a Meta Pixel or similar browser advertising pixel.</p>
+
+<h3>3.6 Instagram comment-to-DM (our servers)</h3>
+<p>If you comment a campaign keyword on one of our Instagram accounts (currently Naru, Riley, or Rhea), Meta sends us a webhook. We store that event in our own database so we can send at most one private reply with a tracked App Store link and debug failures. Stored fields include:</p>
+<ul>
+    <li><code>webhook_events</code>: Instagram-scoped commenter ID, comment text, media ID, our account ID, and the complete Meta webhook payload (raw JSON)</li>
+    <li><code>dm_log</code>: comment ID, recipient (Instagram-scoped user ID), media ID, matched keyword, link code, and send status</li>
+</ul>
+<p>We keep these rows to operate and audit the feature (dedupe, one DM per person per post, failure diagnosis). They are not used to advertise to you in the App. Meta also processes the same comments and DMs under <a href="https://privacycenter.instagram.com/policy">Instagram's Privacy Policy</a>; that does not replace this disclosure of what <em>we</em> store.</p>
+
+<h2>4. Information We Do Not Collect</h2>
 <ul>
     <li>We do <strong>not</strong> require an account or registration</li>
-    <li>We do <strong>not</strong> collect your name, email, or contact information</li>
-    <li>We do <strong>not</strong> use analytics or tracking services</li>
-    <li>We do <strong>not</strong> collect device identifiers or advertising IDs</li>
-    <li>We do <strong>not</strong> use cookies or similar tracking technologies</li>
+    <li>We do <strong>not</strong> collect your name unless you choose to put it in optional feedback</li>
+    <li>We do <strong>not</strong> collect your email unless you type it into optional in-app feedback</li>
+    <li>We do <strong>not</strong> collect the advertising identifier (IDFA)</li>
     <li>We do <strong>not</strong> access your camera, microphone, photos, or contacts</li>
 </ul>
 
-<h2>4. How We Use Your Information</h2>
-<p>All user data is stored locally on your device and used solely to provide app functionality:</p>
+<h2>5. How We Use This Information</h2>
 <ul>
-    <li>Displaying clips matching your selected difficulty level</li>
-    <li>Showing your saved vocabulary words</li>
-    <li>Remembering your content preferences</li>
+    <li><strong>Provide the App:</strong> personalize the feed, save vocabulary, run reviews, unlock content, process subscriptions, restore iCloud backups</li>
+    <li><strong>Analytics:</strong> understand feature use, onboarding, and paywall performance</li>
+    <li><strong>Advertising measurement:</strong> measure Meta and TikTok ad performance through AppsFlyer (installs, sessions, trials, purchases) so we can run and improve ads</li>
+    <li><strong>Support:</strong> read optional feedback you send</li>
+    <li><strong>Outreach measurement:</strong> count website clicks on tracked links</li>
 </ul>
-<p>We do not transmit any personal data to our servers or third parties.</p>
+<p>We do not sell your personal data.</p>
 
-<h2>5. Third-Party Services</h2>
+<h2>6. Advertising Platforms and SKAdNetwork</h2>
+<p>Meta and TikTok receive only the partner postbacks and event data configured in AppsFlyer; neither advertising platform has its own SDK in the App. Apple may provide aggregated SKAdNetwork conversion measurement, and AppsFlyer may manage the conversion-value schema used for that reporting. These signals are used for campaign measurement and optimization without IDFA.</p>
 
-<h3>5.1 Cloudflare (Content Delivery)</h3>
+<h2>7. Data Retention</h2>
 <ul>
-    <li><strong>Service:</strong> Video and content hosting</li>
-    <li><strong>Data Shared:</strong> Standard HTTP request data only (no personal data)</li>
-    <li><strong>Privacy:</strong> Subject to <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a></li>
-</ul>
-
-<h3>5.2 Apple App Store</h3>
-<ul>
-    <li><strong>Service:</strong> App distribution</li>
-    <li><strong>Privacy:</strong> Subject to <a href="https://www.apple.com/privacy">Apple's Privacy Policy</a></li>
+    <li><strong>On-device data:</strong> until you delete the App or clear its data</li>
+    <li><strong>iCloud backup:</strong> until you delete the backup or your iCloud data, subject to Apple's retention</li>
+    <li><strong>PostHog, RevenueCat, AppsFlyer, Meta, TikTok, Cloudflare, and website logs:</strong> according to each provider's retention and our need to operate analytics, subscriptions, ads measurement, and the site</li>
+    <li><strong>Feedback:</strong> kept as long as needed to review it and, if you left contact details, to reply</li>
+    <li><strong>Instagram comment-to-DM logs:</strong> kept as long as needed to operate, dedupe, and debug the feature; email us to request deletion</li>
 </ul>
 
-<h2>6. Data Retention</h2>
+<h2>8. Data Security</h2>
 <ul>
-    <li><strong>Preferences &amp; Vocabulary:</strong> Kept on your device until you delete the app or clear app data</li>
-    <li><strong>Streamed Content:</strong> Video clips may be temporarily cached by iOS; cache is managed automatically by the system</li>
-</ul>
-<p>You can delete all app data at any time by uninstalling the App or clearing app data in iOS Settings &gt; General &gt; iPhone Storage.</p>
-
-<h2>7. Data Security</h2>
-<p>We implement appropriate measures to protect your data:</p>
-<ul>
-    <li><strong>Local Storage:</strong> All user data is stored on-device using iOS standard encryption</li>
-    <li><strong>Network:</strong> All content is delivered over HTTPS</li>
-    <li><strong>No Cloud Sync:</strong> Your data stays on your device</li>
+    <li>On-device data uses iOS platform storage and encryption</li>
+    <li>Network traffic uses HTTPS</li>
+    <li>iCloud backups use Apple's iCloud security</li>
 </ul>
 
-<h2>8. Your Privacy Rights</h2>
+<h2>9. Your Privacy Rights</h2>
 
-<h3>8.1 Data Access &amp; Deletion</h3>
+<h3>9.1 Access and deletion</h3>
+<p>You can delete on-device App data by uninstalling the App or clearing it in iOS Settings. iCloud backups can be removed in iOS Settings &gt; [your name] &gt; iCloud (the App has no in-app delete-backup control). For analytics, subscription, ads-measurement, feedback, website click logs, or Instagram comment-to-DM logs held by us or our processors, email <a href="mailto:salahedine-youssef@outlook.de">salahedine-youssef@outlook.de</a>.</p>
+
+<h3>9.2 Tracking and advertising</h3>
+<p>We do not show an App Tracking Transparency prompt and we do not collect IDFA. We send advertising-measurement events through AppsFlyer, which may provide configured postbacks to Meta and TikTok, and we send Apple Ads attribution tokens to RevenueCat. iOS Settings &gt; Privacy &amp; Security still controls system-level tracking and Apple Ads preferences.</p>
+
+<h3>9.3 Age</h3>
+<p>The App is intended for users 13 years and older. We do not knowingly collect personal data from children under 13.</p>
+
+<h2>10. California Privacy Rights (CCPA / CPRA)</h2>
+<p>If you are a California resident, you may request to know, delete, or correct personal information, and you may opt out of sale or sharing of personal information. We do not sell personal information for money. Some advertising-measurement disclosures through AppsFlyer to Meta and TikTok may be "sharing" under California law. To exercise these rights, contact us (section 12).</p>
+
+<h2>11. European Privacy Rights (GDPR / UK GDPR)</h2>
+<p>If you are in the EU/EEA or UK, we process personal data on these bases:</p>
 <ul>
-    <li>All your data is stored locally on your device</li>
-    <li>You can delete all app data by uninstalling the App</li>
-    <li>No request to us is needed since we do not hold any of your data</li>
+    <li><strong>Contract / steps prior to contract:</strong> providing the App, content delivery, subscriptions</li>
+    <li><strong>Legitimate interests:</strong> product analytics, preventing abuse, measuring ads so we can run the App as a business</li>
+    <li><strong>Consent:</strong> optional feedback contact details; any future App Tracking Transparency prompt if we add one</li>
 </ul>
+<p>You have rights of access, rectification, erasure, restriction, portability, and objection, and the right to complain to a supervisory authority. Contact us (section 12).</p>
 
-<h3>8.2 Tracking &amp; Advertising</h3>
-<ul>
-    <li>We do not track you across other apps or websites</li>
-    <li>We do not use your data for advertising</li>
-    <li>We do not sell your data to third parties</li>
-</ul>
+<h2>12. Contact Us</h2>
+<p>Questions about this policy or our privacy practices:</p>
+<p><strong>Email:</strong> <a href="mailto:salahedine-youssef@outlook.de">salahedine-youssef@outlook.de</a></p>
 
-<h3>8.3 Age Restrictions</h3>
-<p>This App is intended for users 13 years and older. We do not knowingly collect information from children under 13.</p>
-
-<h2>9. California Privacy Rights (CCPA)</h2>
-<p>If you are a California resident, you have specific rights including the right to know what personal data is collected, the right to delete personal data, and the right to opt-out of sale/sharing of personal data. Since we do not collect or store personal data, these rights are inherently satisfied. For any CCPA requests, contact us (see section 11).</p>
-
-<h2>10. European Privacy Rights (GDPR)</h2>
-<p>If you are in the EU/EEA, you have rights including the right to access, rectification, erasure, restriction of processing, data portability, and the right to object. Since all data is stored locally on your device and we do not process personal data on our servers, these rights are inherently satisfied. For any GDPR requests, contact us (see section 11).</p>
-
-<h2>11. Contact Us</h2>
-<p>If you have questions about this Privacy Policy or our privacy practices:</p>
-<p><strong>Email:</strong> salahedine-youssef@outlook.de</p>
-
-<h2>12. Changes to This Policy</h2>
-<p>We may update this Privacy Policy periodically. We will notify you of material changes by updating the "Last Updated" date. Your continued use of the App after changes constitutes acceptance of the updated Privacy Policy.</p>
-
-<h2>13. Compliance Information</h2>
-<ul>
-    <li><strong>iOS Privacy Labels:</strong> This App complies with iOS App Store privacy label requirements</li>
-    <li><strong>Platform:</strong> iOS only</li>
-    <li><strong>Data Practices:</strong> As described in this policy</li>
-</ul>
+<h2>13. Changes to This Policy</h2>
+<p>We may update this Privacy Policy. We will change the "Last Updated" date for material changes. Continued use of the App or website after changes constitutes acceptance of the updated policy.</p>
 
 <hr>
 
-<p><strong>Summary of Data Practices:</strong></p>
+<p><strong>Summary of data practices:</strong></p>
 <table>
     <thead>
         <tr>
-            <th>Data Type</th>
+            <th>Data</th>
             <th>Collected</th>
-            <th>Stored</th>
-            <th>Shared</th>
+            <th>Where</th>
+            <th>Shared with</th>
             <th>Used for</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Preferences</td>
+            <td>Learning data (prefs, vocab, favorites, progress)</td>
             <td>Yes</td>
-            <td>Device only</td>
-            <td>No</td>
-            <td>Feed personalization</td>
+            <td>Device; optional iCloud</td>
+            <td>Apple iCloud if you enable backup</td>
+            <td>App features</td>
         </tr>
         <tr>
-            <td>Vocabulary</td>
+            <td>Product events</td>
             <td>Yes</td>
-            <td>Device only</td>
-            <td>No</td>
-            <td>Learning progress</td>
+            <td>PostHog (EU)</td>
+            <td>PostHog</td>
+            <td>Analytics</td>
         </tr>
         <tr>
-            <td>Favorites</td>
+            <td>Anonymous app user ID</td>
             <td>Yes</td>
-            <td>Device only</td>
-            <td>No</td>
-            <td>Clip bookmarking</td>
+            <td>RevenueCat, PostHog, AppsFlyer</td>
+            <td>RevenueCat, PostHog, AppsFlyer</td>
+            <td>Subscriptions, analytics, ads measurement</td>
         </tr>
         <tr>
-            <td>Network Data</td>
-            <td>Minimal (IP)</td>
+            <td>Purchases / trials</td>
+            <td>Yes</td>
+            <td>Apple, RevenueCat, AppsFlyer</td>
+            <td>Apple, RevenueCat, AppsFlyer; configured postbacks to Meta and TikTok</td>
+            <td>Subscriptions, ads measurement</td>
+        </tr>
+        <tr>
+            <td>AppsFlyer ID, IDFV, IP, user agent, device and app metadata</td>
+            <td>Yes</td>
+            <td>AppsFlyer</td>
+            <td>AppsFlyer; permitted data may be included in configured Meta and TikTok postbacks</td>
+            <td>Ads measurement</td>
+        </tr>
+        <tr>
+            <td>IDFA</td>
             <td>No</td>
-            <td>Cloudflare (hosting)</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td>Optional feedback + email</td>
+            <td>Only if you submit it</td>
+            <td>PostHog</td>
+            <td>PostHog</td>
+            <td>Support</td>
+        </tr>
+        <tr>
+            <td>Content requests (IP)</td>
+            <td>Yes</td>
+            <td>Cloudflare</td>
+            <td>Cloudflare</td>
             <td>Content delivery</td>
+        </tr>
+        <tr>
+            <td>Website tracked-link clicks (code, country, user agent)</td>
+            <td>Yes</td>
+            <td>Our Cloudflare Worker / D1</td>
+            <td>Cloudflare as processor (IP is used to serve the request; we do not store IP in D1)</td>
+            <td>Outreach measurement</td>
+        </tr>
+        <tr>
+            <td>Instagram commenter ID, comment text, raw webhook payload</td>
+            <td>Yes, if you comment a keyword on our IG accounts</td>
+            <td>Our Cloudflare D1</td>
+            <td>Stored by us; Meta also has the original comment</td>
+            <td>Comment-to-DM outreach</td>
+        </tr>
+        <tr>
+            <td>Meta app-ads SDK</td>
+            <td>Not active</td>
+            <td>—</td>
+            <td>—</td>
+            <td>Planned; policy will be updated before launch</td>
         </tr>
     </tbody>
 </table>
